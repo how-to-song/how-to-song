@@ -4,8 +4,8 @@
   "commit_chips": 878,
   "current_chips": 868,
   "bet": 10,
-  "status": "playing",
-  "result": null,
+  "status": "finished",
+  "result": "dealer_win",
   "game_id": 1,
   "draw_index": 5,
   "player_hand": [
@@ -14,7 +14,8 @@
     "D9"
   ],
   "dealer_hand": [
-    "D10"
+    "D10",
+    "DJ"
   ],
   "reset_log": {
     "date": "2026-11-08",
@@ -23,6 +24,13 @@
     }
   },
   "history": [
+    {
+      "issue": 6,
+      "action": "Stand",
+      "detail": "딜러 D10 DJ · 합계 20 · 딜러 승리",
+      "actor": "how-to-song",
+      "at": "2026-11-08T20:50:31+09:00"
+    },
     {
       "issue": 5,
       "action": "Hit",
@@ -45,6 +53,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 5,
-  "last_updated": "2026-11-08T20:50:07+09:00"
+  "last_processed_issue": 6,
+  "last_updated": "2026-11-08T20:50:31+09:00"
 }
