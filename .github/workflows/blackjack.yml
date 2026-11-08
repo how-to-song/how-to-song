@@ -1,0 +1,26 @@
+name: Blackjack
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: blackjack
+  cancel-in-progress: false
+jobs:
+  play:
+    if: github.event_name != 'issues' || startsWith(github.event.issue.title, 'blackjack-')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m blackjack.main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLACKJACK_SECRET: ${{ secrets.BLACKJACK_SECRET }}
