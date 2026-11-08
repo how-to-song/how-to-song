@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "owner": "how-to-song",
+  "commit_chips": 0,
+  "current_chips": 0,
+  "bet": 10,
+  "status": "idle",
+  "result": null,
+  "game_id": 0,
+  "draw_index": 0,
+  "player_hand": [],
+  "dealer_hand": [],
+  "reset_log": {
+    "date": null,
+    "counts": {}
+  },
+  "history": [],
+  "last_processed_issue": 0,
+  "last_updated": null
+}
