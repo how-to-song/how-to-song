@@ -1,0 +1,8 @@
+# 설계 시안 파일 (brainstorming)
+.superpowers/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
