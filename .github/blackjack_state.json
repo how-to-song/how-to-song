@@ -2,14 +2,19 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 888,
-  "current_chips": 888,
+  "current_chips": 878,
   "bet": 10,
-  "status": "idle",
+  "status": "playing",
   "result": null,
-  "game_id": 2,
-  "draw_index": 0,
-  "player_hand": [],
-  "dealer_hand": [],
+  "game_id": 3,
+  "draw_index": 4,
+  "player_hand": [
+    "H8",
+    "C3"
+  ],
+  "dealer_hand": [
+    "D8"
+  ],
   "reset_log": {
     "date": "2026-11-08",
     "counts": {
@@ -18,6 +23,13 @@
     }
   },
   "history": [
+    {
+      "issue": 11,
+      "action": "Deal",
+      "detail": "새 판 시작 · 베팅 10 · 합계 11",
+      "actor": "HeoJunekang",
+      "at": "2026-11-08T21:07:12+09:00"
+    },
     {
       "issue": 10,
       "action": "Reset",
@@ -68,6 +80,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 10,
-  "last_updated": "2026-11-08T21:06:49+09:00"
+  "last_processed_issue": 11,
+  "last_updated": "2026-11-08T21:07:12+09:00"
 }
