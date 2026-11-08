@@ -5,10 +5,13 @@ from datetime import datetime
 from typing import Callable
 
 from blackjack.cards import hand_value, is_blackjack
+from blackjack.state import KST
 
 ACTIONS = ("deal", "hit", "stand", "reset")
 LABELS = {"deal": "Deal", "hit": "Hit", "stand": "Stand", "reset": "Reset"}
 BET = 10
+MIN_CHIPS = 10
+RESET_LIMIT = 5
 
 RESULT_TEXT = {
     "player_blackjack": "블랙잭 승리!",
@@ -113,7 +116,24 @@ def _stand(state: dict, deck_for: Callable[[int], list[str]]) -> Outcome:
 
 
 def _reset(state: dict, actor: str, now: datetime, fetch_contributions: Callable[[str], int]) -> Outcome:
-    raise NotImplementedError
+    if state["status"] == "playing":
+        return _not_now(state, "reset")
+    today = now.astimezone(KST).date().isoformat()
+    if state["reset_log"]["date"] != today:
+        state["reset_log"] = {"date": today, "counts": {}}
+    counts = state["reset_log"]["counts"]
+    key = actor.lower()
+    if counts.get(key, 0) >= RESET_LIMIT:
+        return Outcome(False, "오늘 Reset 횟수를 다 쓰셨습니다")
+    try:
+        contributions = int(fetch_contributions(state["owner"]))
+    except Exception:
+        return Outcome(False, "기여 수를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.")
+    chips = max(contributions, MIN_CHIPS)
+    state.update(commit_chips=contributions, current_chips=chips, status="idle", result=None,
+                 player_hand=[], dealer_hand=[], draw_index=0)
+    counts[key] = counts.get(key, 0) + 1
+    return Outcome(True, f"칩을 🪙 {chips}개로 설정 (최근 1년 기여 {contributions})")
 
 
 def apply_action(state: dict, action: str, *, actor: str, now: datetime,
