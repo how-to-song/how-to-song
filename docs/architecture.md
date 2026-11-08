@@ -126,6 +126,7 @@ GitHub의 `concurrency`는 실행 중 1개 + 대기 1개만 유지하고, 더 �
 ## 8. README 렌더링 (render.py)
 - `<!-- blackjack -->`와 `<!-- /blackjack -->` 사이만 치환한다. 마커가 없거나 짝이 맞지 않으면 README를 건드리지 않고 실패한다(R24).
 - GitHub README가 허용하는 HTML만 사용한다: `table`, `img`(`width`), `a`, `h3`, `b`, `div align`. CSS와 JS는 사용하지 않는다.
+- 구간 전체를 `<details open>` + `<summary><b>🎮 게임판 열기/닫기</b></summary>`로 감싸 방문자가 접고 펼 수 있게 한다. 버튼을 누르고 새로고침했을 때 다시 펼칠 필요가 없도록 기본은 펼침이다. [사용자 요청, 기본값은 Claude 결정]
 - 구간 안의 순서:
   1. 안내 문구 + 마지막 갱신 시각(KST)
   2. 결과 배너(판이 끝났을 때, `h3 align="center"`)

@@ -69,3 +69,11 @@ def test_action_url_prefills_body():
     url = action_url("deal")
     assert url.startswith("https://github.com/how-to-song/how-to-song/issues/new?title=blackjack-deal&body=")
     assert " " not in url
+
+
+def test_board_is_collapsible_and_open_by_default():
+    # 접기/펼치기. 버튼을 누르고 돌아왔을 때 다시 펼칠 필요가 없도록 기본은 펼침.
+    lines = render_board(initial_state()).splitlines()
+    assert lines[0] == "<details open>"
+    assert lines[1] == "<summary><b>🎮 게임판 열기/닫기</b></summary>"
+    assert lines[-1] == "</details>"

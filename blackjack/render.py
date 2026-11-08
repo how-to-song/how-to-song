@@ -17,6 +17,7 @@ REPO = "how-to-song/how-to-song"
 CARD_WIDTH = 70
 
 NOTICE = "🤖 링크를 누른 뒤 약 1분 후 새로고침(F5)해 주세요!"
+SUMMARY = "🎮 게임판 열기/닫기"
 ISSUE_BODY = "이 Issue의 제목과 내용을 바꾸지 말고 그대로 제출만 하세요. 약 1분 뒤 프로필 README가 갱신됩니다."
 
 
@@ -45,7 +46,9 @@ def _updated(state: dict) -> str:
 
 def render_board(state: dict) -> str:
     status = state["status"]
-    lines = ['<div align="center">',
+    lines = ["<details open>",
+             f"<summary><b>{SUMMARY}</b></summary>",
+             '<div align="center">',
              f"<p>{NOTICE}<br><sub>마지막 갱신: {_updated(state)} KST</sub></p>"]
 
     if status in ("finished", "broke") and state["result"]:
@@ -84,6 +87,7 @@ def render_board(state: dict) -> str:
                      f'<td><a href="https://github.com/{actor}">@{actor}</a></td></tr>')
     lines.append("</table>")
     lines.append("</div>")
+    lines.append("</details>")
     return "\n".join(lines)
 
 
