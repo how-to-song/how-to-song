@@ -1,8 +1,8 @@
 {
   "version": 1,
   "owner": "how-to-song",
-  "commit_chips": 0,
-  "current_chips": 0,
+  "commit_chips": 878,
+  "current_chips": 878,
   "bet": 10,
   "status": "idle",
   "result": null,
@@ -11,10 +11,20 @@
   "player_hand": [],
   "dealer_hand": [],
   "reset_log": {
-    "date": null,
-    "counts": {}
+    "date": "2026-11-08",
+    "counts": {
+      "how-to-song": 1
+    }
   },
-  "history": [],
-  "last_processed_issue": 0,
-  "last_updated": null
+  "history": [
+    {
+      "issue": 3,
+      "action": "Reset",
+      "detail": "칩을 🪙 878개로 설정 (최근 1년 기여 878)",
+      "actor": "how-to-song",
+      "at": "2026-11-08T20:49:14+09:00"
+    }
+  ],
+  "last_processed_issue": 3,
+  "last_updated": "2026-11-08T20:49:14+09:00"
 }
