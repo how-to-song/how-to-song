@@ -7,10 +7,11 @@
   "status": "playing",
   "result": null,
   "game_id": 1,
-  "draw_index": 4,
+  "draw_index": 5,
   "player_hand": [
     "S3",
-    "D7"
+    "D7",
+    "D9"
   ],
   "dealer_hand": [
     "D10"
@@ -22,6 +23,13 @@
     }
   },
   "history": [
+    {
+      "issue": 5,
+      "action": "Hit",
+      "detail": "D9 받음 · 합계 19",
+      "actor": "how-to-song",
+      "at": "2026-11-08T20:50:07+09:00"
+    },
     {
       "issue": 4,
       "action": "Deal",
@@ -37,6 +45,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 4,
-  "last_updated": "2026-11-08T20:49:38+09:00"
+  "last_processed_issue": 5,
+  "last_updated": "2026-11-08T20:50:07+09:00"
 }
