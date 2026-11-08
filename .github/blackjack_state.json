@@ -1,28 +1,30 @@
 {
   "version": 1,
   "owner": "how-to-song",
-  "commit_chips": 883,
-  "current_chips": 873,
+  "commit_chips": 888,
+  "current_chips": 888,
   "bet": 10,
-  "status": "finished",
-  "result": "dealer_win",
+  "status": "idle",
+  "result": null,
   "game_id": 2,
-  "draw_index": 4,
-  "player_hand": [
-    "C6",
-    "SQ"
-  ],
-  "dealer_hand": [
-    "DQ",
-    "DA"
-  ],
+  "draw_index": 0,
+  "player_hand": [],
+  "dealer_hand": [],
   "reset_log": {
     "date": "2026-11-08",
     "counts": {
-      "how-to-song": 2
+      "how-to-song": 2,
+      "heojunekang": 1
     }
   },
   "history": [
+    {
+      "issue": 10,
+      "action": "Reset",
+      "detail": "칩을 🪙 888개로 설정 (최근 1년 기여 888)",
+      "actor": "HeoJunekang",
+      "at": "2026-11-08T21:06:49+09:00"
+    },
     {
       "issue": 9,
       "action": "Deal",
@@ -66,6 +68,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 9,
-  "last_updated": "2026-11-08T21:00:45+09:00"
+  "last_processed_issue": 10,
+  "last_updated": "2026-11-08T21:06:49+09:00"
 }
