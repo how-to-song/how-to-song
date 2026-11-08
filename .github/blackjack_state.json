@@ -1,29 +1,29 @@
 {
   "version": 1,
   "owner": "how-to-song",
-  "commit_chips": 878,
-  "current_chips": 868,
+  "commit_chips": 883,
+  "current_chips": 883,
   "bet": 10,
-  "status": "finished",
-  "result": "dealer_win",
+  "status": "idle",
+  "result": null,
   "game_id": 1,
-  "draw_index": 5,
-  "player_hand": [
-    "S3",
-    "D7",
-    "D9"
-  ],
-  "dealer_hand": [
-    "D10",
-    "DJ"
-  ],
+  "draw_index": 0,
+  "player_hand": [],
+  "dealer_hand": [],
   "reset_log": {
     "date": "2026-11-08",
     "counts": {
-      "how-to-song": 1
+      "how-to-song": 2
     }
   },
   "history": [
+    {
+      "issue": 8,
+      "action": "Reset",
+      "detail": "칩을 🪙 883개로 설정 (최근 1년 기여 883)",
+      "actor": "how-to-song",
+      "at": "2026-11-08T20:54:32+09:00"
+    },
     {
       "issue": 6,
       "action": "Stand",
@@ -53,6 +53,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 6,
-  "last_updated": "2026-11-08T20:50:31+09:00"
+  "last_processed_issue": 8,
+  "last_updated": "2026-11-08T20:54:32+09:00"
 }
