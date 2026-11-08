@@ -2,14 +2,19 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 878,
-  "current_chips": 878,
+  "current_chips": 868,
   "bet": 10,
-  "status": "idle",
+  "status": "playing",
   "result": null,
-  "game_id": 0,
-  "draw_index": 0,
-  "player_hand": [],
-  "dealer_hand": [],
+  "game_id": 1,
+  "draw_index": 4,
+  "player_hand": [
+    "S3",
+    "D7"
+  ],
+  "dealer_hand": [
+    "D10"
+  ],
   "reset_log": {
     "date": "2026-11-08",
     "counts": {
@@ -18,6 +23,13 @@
   },
   "history": [
     {
+      "issue": 4,
+      "action": "Deal",
+      "detail": "새 판 시작 · 베팅 10 · 합계 10",
+      "actor": "how-to-song",
+      "at": "2026-11-08T20:49:38+09:00"
+    },
+    {
       "issue": 3,
       "action": "Reset",
       "detail": "칩을 🪙 878개로 설정 (최근 1년 기여 878)",
@@ -25,6 +37,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 3,
-  "last_updated": "2026-11-08T20:49:14+09:00"
+  "last_processed_issue": 4,
+  "last_updated": "2026-11-08T20:49:38+09:00"
 }
