@@ -126,6 +126,7 @@ GitHub의 `concurrency`는 실행 중 1개 + 대기 1개만 유지하고, 더 �
 ## 8. README 렌더링 (render.py)
 - `<!-- blackjack -->`와 `<!-- /blackjack -->` 사이만 치환한다. 마커가 없거나 짝이 맞지 않으면 README를 건드리지 않고 실패한다(R24).
 - GitHub README가 허용하는 HTML만 사용한다: `table`, `img`(`width`), `a`, `h3`, `b`, `div align`. CSS와 JS는 사용하지 않는다.
+- 구간 전체를 `<details open>` + `<summary><b>🎮 게임판 열기/닫기</b></summary>`로 감싸 방문자가 접고 펼 수 있게 한다. 버튼을 누르고 새로고침했을 때 다시 펼칠 필요가 없도록 기본은 펼침이다. [사용자 요청, 기본값은 Claude 결정]
 - 구간 안의 순서:
   1. 안내 문구 + 마지막 갱신 시각(KST)
   2. 결과 배너(판이 끝났을 때, `h3 align="center"`)
@@ -146,7 +147,8 @@ GitHub의 `concurrency`는 실행 중 1개 + 대기 1개만 유지하고, 더 �
 
 ## 10. 기존 README와의 결합
 - 기존 프로필 내용은 그대로 둔다. 게임 구간 마커를 처음 한 번 넣는다.
-- 위치: README **맨 위**, 기존 `<div align="center">`(Tech Stacks) 블록보다 앞. 기존 `<div>` 안쪽이나 맨 아래 `<!-- ... -->` 주석 안에는 넣지 않는다. [사용자]
+- 위치: README **맨 아래**. 템플릿 안내 `<!-- ... -->` 주석이 끝난 뒤에 `---`, `## 🃏 Blackjack` 제목, 빈 줄, 마커 구간 순서로 둔다. 기존 `<div>` 안쪽이나 템플릿 주석 안에는 넣지 않는다. (2026-11-08 맨 위 → 맨 아래로 변경) [사용자]
+- Projects 절에 `### [GitHub Blackjack](https://github.com/how-to-song/how-to-song/tree/main/blackjack) - …` 한 줄 소개를 둔다. [사용자]
 - 마커 구간과 기존 내용 사이에 빈 줄을 하나 둔다. 그래야 두 HTML 블록이 서로 섞이지 않는다.
 
 ## 11. 테스트
