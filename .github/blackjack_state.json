@@ -2,14 +2,20 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 883,
-  "current_chips": 883,
+  "current_chips": 873,
   "bet": 10,
-  "status": "idle",
-  "result": null,
-  "game_id": 1,
-  "draw_index": 0,
-  "player_hand": [],
-  "dealer_hand": [],
+  "status": "finished",
+  "result": "dealer_win",
+  "game_id": 2,
+  "draw_index": 4,
+  "player_hand": [
+    "C6",
+    "SQ"
+  ],
+  "dealer_hand": [
+    "DQ",
+    "DA"
+  ],
   "reset_log": {
     "date": "2026-11-08",
     "counts": {
@@ -17,6 +23,13 @@
     }
   },
   "history": [
+    {
+      "issue": 9,
+      "action": "Deal",
+      "detail": "새 판 시작 · 딜러 승리",
+      "actor": "how-to-song",
+      "at": "2026-11-08T21:00:45+09:00"
+    },
     {
       "issue": 8,
       "action": "Reset",
@@ -53,6 +66,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 8,
-  "last_updated": "2026-11-08T20:54:32+09:00"
+  "last_processed_issue": 9,
+  "last_updated": "2026-11-08T21:00:45+09:00"
 }
