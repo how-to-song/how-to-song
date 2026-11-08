@@ -2,19 +2,22 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 888,
-  "current_chips": 878,
+  "current_chips": 898,
   "bet": 10,
-  "status": "playing",
-  "result": null,
+  "status": "finished",
+  "result": "player_win",
   "game_id": 3,
-  "draw_index": 5,
+  "draw_index": 7,
   "player_hand": [
     "H8",
     "C3",
     "S10"
   ],
   "dealer_hand": [
-    "D8"
+    "D8",
+    "H3",
+    "S3",
+    "S6"
   ],
   "reset_log": {
     "date": "2026-11-08",
@@ -24,6 +27,13 @@
     }
   },
   "history": [
+    {
+      "issue": 13,
+      "action": "Stand",
+      "detail": "딜러 D8 H3 S3 S6 · 합계 20 · 플레이어 승리!",
+      "actor": "HeoJunekang",
+      "at": "2026-11-08T21:08:41+09:00"
+    },
     {
       "issue": 12,
       "action": "Hit",
@@ -88,6 +98,6 @@
       "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 12,
-  "last_updated": "2026-11-08T21:08:08+09:00"
+  "last_processed_issue": 13,
+  "last_updated": "2026-11-08T21:08:41+09:00"
 }
