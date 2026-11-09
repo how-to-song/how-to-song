@@ -1,32 +1,29 @@
 {
   "version": 1,
   "owner": "how-to-song",
-  "commit_chips": 888,
-  "current_chips": 898,
+  "commit_chips": 892,
+  "current_chips": 892,
   "bet": 10,
-  "status": "finished",
-  "result": "player_win",
+  "status": "idle",
+  "result": null,
   "game_id": 3,
-  "draw_index": 7,
-  "player_hand": [
-    "H8",
-    "C3",
-    "S10"
-  ],
-  "dealer_hand": [
-    "D8",
-    "H3",
-    "S3",
-    "S6"
-  ],
+  "draw_index": 0,
+  "player_hand": [],
+  "dealer_hand": [],
   "reset_log": {
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "counts": {
-      "how-to-song": 2,
-      "heojunekang": 1
+      "minseongkim275-dotcom": 1
     }
   },
   "history": [
+    {
+      "issue": 14,
+      "action": "Reset",
+      "detail": "칩을 🪙 892개로 설정 (최근 1년 기여 892)",
+      "actor": "minseongkim275-dotcom",
+      "at": "2026-11-09T22:15:45+09:00"
+    },
     {
       "issue": 13,
       "action": "Stand",
@@ -89,15 +86,8 @@
       "detail": "새 판 시작 · 베팅 10 · 합계 10",
       "actor": "how-to-song",
       "at": "2026-11-08T20:49:38+09:00"
-    },
-    {
-      "issue": 3,
-      "action": "Reset",
-      "detail": "칩을 🪙 878개로 설정 (최근 1년 기여 878)",
-      "actor": "how-to-song",
-      "at": "2026-11-08T20:49:14+09:00"
     }
   ],
-  "last_processed_issue": 13,
-  "last_updated": "2026-11-08T21:08:41+09:00"
+  "last_processed_issue": 14,
+  "last_updated": "2026-11-09T22:15:45+09:00"
 }
