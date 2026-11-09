@@ -7,10 +7,11 @@
   "status": "playing",
   "result": null,
   "game_id": 4,
-  "draw_index": 4,
+  "draw_index": 5,
   "player_hand": [
     "H3",
-    "S6"
+    "S6",
+    "S8"
   ],
   "dealer_hand": [
     "SK"
@@ -22,6 +23,13 @@
     }
   },
   "history": [
+    {
+      "issue": 16,
+      "action": "Hit",
+      "detail": "S8 받음 · 합계 17",
+      "actor": "minseongkim275-dotcom",
+      "at": "2026-11-09T22:16:40+09:00"
+    },
     {
       "issue": 15,
       "action": "Deal",
@@ -84,15 +92,8 @@
       "detail": "딜러 D10 DJ · 합계 20 · 딜러 승리",
       "actor": "how-to-song",
       "at": "2026-11-08T20:50:31+09:00"
-    },
-    {
-      "issue": 5,
-      "action": "Hit",
-      "detail": "D9 받음 · 합계 19",
-      "actor": "how-to-song",
-      "at": "2026-11-08T20:50:07+09:00"
     }
   ],
-  "last_processed_issue": 15,
-  "last_updated": "2026-11-09T22:16:06+09:00"
+  "last_processed_issue": 16,
+  "last_updated": "2026-11-09T22:16:40+09:00"
 }
