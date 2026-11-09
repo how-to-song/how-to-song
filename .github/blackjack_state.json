@@ -2,14 +2,19 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 892,
-  "current_chips": 892,
+  "current_chips": 882,
   "bet": 10,
-  "status": "idle",
+  "status": "playing",
   "result": null,
-  "game_id": 3,
-  "draw_index": 0,
-  "player_hand": [],
-  "dealer_hand": [],
+  "game_id": 4,
+  "draw_index": 4,
+  "player_hand": [
+    "H3",
+    "S6"
+  ],
+  "dealer_hand": [
+    "SK"
+  ],
   "reset_log": {
     "date": "2026-11-09",
     "counts": {
@@ -17,6 +22,13 @@
     }
   },
   "history": [
+    {
+      "issue": 15,
+      "action": "Deal",
+      "detail": "새 판 시작 · 베팅 10 · 합계 9",
+      "actor": "minseongkim275-dotcom",
+      "at": "2026-11-09T22:16:06+09:00"
+    },
     {
       "issue": 14,
       "action": "Reset",
@@ -79,15 +91,8 @@
       "detail": "D9 받음 · 합계 19",
       "actor": "how-to-song",
       "at": "2026-11-08T20:50:07+09:00"
-    },
-    {
-      "issue": 4,
-      "action": "Deal",
-      "detail": "새 판 시작 · 베팅 10 · 합계 10",
-      "actor": "how-to-song",
-      "at": "2026-11-08T20:49:38+09:00"
     }
   ],
-  "last_processed_issue": 14,
-  "last_updated": "2026-11-09T22:15:45+09:00"
+  "last_processed_issue": 15,
+  "last_updated": "2026-11-09T22:16:06+09:00"
 }
