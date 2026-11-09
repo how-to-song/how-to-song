@@ -2,19 +2,21 @@
   "version": 1,
   "owner": "how-to-song",
   "commit_chips": 892,
-  "current_chips": 882,
+  "current_chips": 902,
   "bet": 10,
-  "status": "playing",
-  "result": null,
+  "status": "finished",
+  "result": "dealer_bust",
   "game_id": 4,
-  "draw_index": 5,
+  "draw_index": 6,
   "player_hand": [
     "H3",
     "S6",
     "S8"
   ],
   "dealer_hand": [
-    "SK"
+    "SK",
+    "H6",
+    "HJ"
   ],
   "reset_log": {
     "date": "2026-11-09",
@@ -23,6 +25,13 @@
     }
   },
   "history": [
+    {
+      "issue": 17,
+      "action": "Stand",
+      "detail": "딜러 SK H6 HJ · 합계 26 · 딜러 버스트! 플레이어 승리",
+      "actor": "minseongkim275-dotcom",
+      "at": "2026-11-09T22:17:13+09:00"
+    },
     {
       "issue": 16,
       "action": "Hit",
@@ -85,15 +94,8 @@
       "detail": "칩을 🪙 883개로 설정 (최근 1년 기여 883)",
       "actor": "how-to-song",
       "at": "2026-11-08T20:54:32+09:00"
-    },
-    {
-      "issue": 6,
-      "action": "Stand",
-      "detail": "딜러 D10 DJ · 합계 20 · 딜러 승리",
-      "actor": "how-to-song",
-      "at": "2026-11-08T20:50:31+09:00"
     }
   ],
-  "last_processed_issue": 16,
-  "last_updated": "2026-11-09T22:16:40+09:00"
+  "last_processed_issue": 17,
+  "last_updated": "2026-11-09T22:17:13+09:00"
 }
